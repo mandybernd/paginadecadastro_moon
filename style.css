@@ -1,0 +1,78 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Austral+Slab&display=swap');
+
+@font-face {
+  font-family: 'MissionDangertitle';
+  src: url('Users/Amanda Paula/Downloads/mission_danger/MissionDangertitle.otf') format('truetype');
+}
+
+body {
+  background-color: #000;
+  background-image: url('https://img.freepik.com/vetores-premium/astronauta-espera-lua-ilustracao-vetorial-de-arte-em-fundo-isolado_493087-103.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1000px;
+  font-family: 'Austral Slab', serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'MissionDangertitle';
+  margin-top: 50px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+p.first {
+  margin: 40px auto;
+  padding: auto;
+  text-align: center;
+}
+
+form {
+  font-family: 'Austral Slab';
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #1e0149, #333);
+  text-align: center;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #08090c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3b056a;
+}
+
+p.second {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
