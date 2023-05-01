@@ -1,75 +1,146 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Austral+Slab&display=swap');
-
-@font-face {
-  font-family: 'MissionDangertitle';
-  src: url('Users/Amanda Paula/Downloads/mission_danger/MissionDangertitle.otf') format('truetype');
+html{
+  height: 100%;
 }
-
 body {
-  background-color: #000;
-  background-image: url('https://img.freepik.com/vetores-premium/astronauta-espera-lua-ilustracao-vetorial-de-arte-em-fundo-isolado_493087-103.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1000px;
-  font-family: 'Austral Slab', serif;
-  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-image: url('39632.jpg');
+background-size: cover;
+  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3em;
-  font-family: 'MissionDangertitle';
-  margin-top: 50px;
-  margin: auto;
-  padding: 30px;
+.social-media {
+  display: flex;
+  align-content: center;
+}
+.social-media img{
+  width: 36px;
+  margin-left: 3rem;
+}
+.social-media a:first-child img{
+  margin-left: 0;
+}
+.alternative {
+margin-top: 1rem;
+}
+.alternative span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+.alternative span::before, main .alternative span::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.alternative span::after {
+  left: 50px;
+}
+.box h1 {
   text-align: center;
+  color: #00ccff;
+  font-size: 1em;
+  align-content: center;
 }
-
-p.first {
-  margin: 40px auto;
-  padding: auto;
+.first {
+  position: static;
   text-align: center;
+  align-content: space-between;
 }
-
-form {
-  font-family: 'Austral Slab';
+.box form {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  margin: auto;
-  padding: 30px;
-  border: 1px solid #333;
-  border-radius: 10px;
-  background: linear-gradient(to bottom, #1e0149, #333);
+  color: #fff;
+  position:absolute;
+  font-size: 1em;
+  z-index: 10;
+}
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); 
+  overflow: hidden;
+  border-radius: 20px; 
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 100%;
+  background: linear-gradient(#00ccff, #d400d4);
+  animation: animate 4s linear infinite; /* change percentage sign to "s" */
+}
+.box::after 
+{
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #0e1538;
+}
+@keyframes animate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 }
 
 label {
   margin-bottom: 5px;
+  display:flex;
+  flex-direction: column;
+  text-align: left;
 }
-
+label span {
+  margin-top: 2rem;
+  text-align: left;
+}
 input {
-  padding: 5px;
+  background: #000;
+  color: #8c19df;
+  gap: 1px;
+  outline: none;
+  padding: 10px;
+  width: 320px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #03e9f4;
 }
-
 button {
-  background-color: #08090c;
-  color: white;
-  border: none;
+  background: #8c19df;
+  color: #fff;
   border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 0 5px #03e9f4, 
+              0 0 25px #03e9,
+              0 0 50px #d400d4,
+              0 0 10px #03e9f4;
+  font-size: 19px;
+  outline: none;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
 }
 
 button:hover {
   background-color: #3b056a;
+  border-color: #fff;
 }
-
 p.second {
   position: absolute;
   bottom: 0;
